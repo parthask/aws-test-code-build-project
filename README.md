@@ -1,2 +1,4 @@
 # aws-test-code-build-project
 AWS codebuild project to learn and test
+
+![Build Status](https://codebuild.ap-south-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiM1FRVGhab0dLdW5jR0ZRRTFiTXJRMnhOZ0UyRWw4UDJIbS9HdVhTcjNrOTdNQ3RTUVBGbTVndm15U215TnlBbXpXcTVNSzdrbkZpejQ5OFhhU3JJSFFvPSIsIml2UGFyYW1ldGVyU3BlYyI6IitXeW96UGZJUHNHVG1rWksiLCJtYXRlcmlhbFNldFNlcmlhbCI6Mn0%3D&branch=master)
