@@ -1,0 +1,25 @@
+version: 0.2
+phases:
+ install:
+   commands:
+   - echo INSTALL started on `date`
+   - echo INSTALL completed on `date`
+ pre_build:
+   commands:
+     - echo PRE_BUILD started on `date`
+     - echo pwd
+     - echo PRE_BUILD completed on `date`
+ build:
+   commands:
+     - echo BUILD started on `date`
+     - echo `pwd`
+     - pwd
+     - ls -lrt
+     - cp -R . dist/
+     - aws s3 cp dist/ "s3://aws-code-build-project/" --recursive --cache-control 'public, max-age=2628000'
+     - echo BUILD completed on `date`
+ post_build:
+   commands:
+     - echo POST_BUILD started on `date`
+     - echo `pwd`
+     - echo POST_BUILD completed on `date`
