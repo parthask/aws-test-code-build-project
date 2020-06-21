@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1592749672990",
+    "Statement": [
+        {
+            "Sid": "Stmt1592749669272",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::aws-code-build-project/*"
+        }
+    ]
+}
