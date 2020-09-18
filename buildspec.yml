@@ -15,7 +15,7 @@ phases:
      - echo `pwd`
      - pwd
      - ls -lrt
-     - aws s3 cp ./ "s3://demo-ci-cd-psk/" --recursive --cache-control 'public, max-age=2628000'
+     - aws s3 cp ./ "s3://hackathon-code-build-artifact/" --recursive --cache-control 'public, max-age=2628000'
      - echo BUILD completed on `date`
  post_build:
    commands:
